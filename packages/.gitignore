@@ -1,0 +1,5 @@
+# Ignoramos todo...
+*
+
+# excepto este archivo
+!repositories.config
