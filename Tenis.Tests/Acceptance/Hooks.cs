@@ -12,8 +12,8 @@ namespace Tenis.Tests.Acceptance
 		[BeforeFeature("UI")]
 		public static void BeforeFeature()
 		{
-			//FeatureContext.Current.Add("CurrentDriver",  new FirefoxDriver());
-			FeatureContext.Current.Add("CurrentDriver", new ChromeDriver(@"C:\GitHub\NetConfUy.central"));
+			FeatureContext.Current.Add("CurrentDriver",  new FirefoxDriver());
+			//FeatureContext.Current.Add("CurrentDriver", new ChromeDriver(@"C:\GitHub\NetConfUy.central"));
 			//FeatureContext.Current.Add("CurrentDriver", new InternetExplorerDriver(@"C:\GitHub\NetConfUy.central"));
 		}
 
