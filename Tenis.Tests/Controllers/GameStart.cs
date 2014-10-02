@@ -22,10 +22,16 @@ namespace Tenis.Tests.Controllers
 		}
 
 		[TestMethod]
+		public void GamePage()
+		{
+			var result = _controller.Start("X", "Y");
+			Assert.AreEqual("Game", result.ViewName);
+		}
+
+		[TestMethod]
 		public void HappyPathStart()
 		{
 			var result = _controller.Start("Federer", "Nadal");
-			Assert.AreEqual("Game", result.ViewName);
 			Assert.AreEqual("Federer vs Nadal", result.ViewBag.Title);
 		}
 
