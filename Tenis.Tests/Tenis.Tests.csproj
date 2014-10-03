@@ -124,19 +124,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Acceptance\FeatureBase.cs" />
-    <Compile Include="Acceptance\Hooks.cs" />
-    <Compile Include="Acceptance\Juego.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Juego.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Acceptance\StepsDefinitions.cs" />
-    <Compile Include="Acceptance\Initial.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Initial.feature</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\GameProcess.cs" />
     <Compile Include="Controllers\GameStart.cs" />
     <Compile Include="Controllers\TestSessionStore.cs" />
@@ -150,14 +137,6 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Acceptance\Initial.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Initial.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Acceptance\Juego.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Juego.feature.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
